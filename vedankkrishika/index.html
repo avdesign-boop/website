@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#fffaf7">
+    <title>Krishika & Vedank | Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body><audio id="song" src="assets/music.mpeg" preload="auto" loop></audio><button id="music" class="music" aria-label="Play or pause wedding music">♫ <span>Play</span></button>
+    <div id="entrance" class="entrance">
+      <div class="door-stage">
+        <div class="door-inside"></div>
+        <div class="panel left"></div>
+        <div class="panel right"></div>
+        <div class="door-plaque">Krishika & Vedank<small>WEDDING INVITATION</small></div><button id="open" class="tap">Tap to Open</button>
+      </div>
+    </div>
+    <main id="invitation" class="invitation">
+      <section class="hero" id="home">
+        <p class="micro">TOGETHER WITH OUR FAMILIES</p>
+        <div class="names"><span>Krishika</span><i>&</i><span>Vedank</span></div>
+        <p class="micro save">SAVE THE DATE</p>
+        <div class="scratch-area">
+          <div class="scratch-inner"><strong>28 January 2027</strong><small>OUR WEDDING DAY</small></div><canvas id="scratch" aria-label="Scratch the gold card to reveal wedding date"></canvas>
+        </div><button id="scratchBtn" class="scratch-button">✧ Scratch to reveal ✧</button>
+        <div class="timer" id="timer">
+          <div><strong id="days">00</strong><small>DAYS</small></div>
+          <div><strong id="hours">00</strong><small>HOURS</small></div>
+          <div><strong id="minutes">00</strong><small>MINUTES</small></div>
+          <div><strong id="seconds">00</strong><small>SECONDS</small></div>
+        </div>
+        <div class="hero-flourish">❧ &nbsp; ❀ &nbsp; ❧</div>
+        <p class="intro">With hearts full of joy, we invite you to celebrate our wedding</p><img class="monogram" src="assets/logo.png" alt="Krishika and Vedank monogram" loading="lazy">
+      </section>
+      <section class="selection" id="families">
+        <p class="micro">THE CELEBRATIONS</p>
+        <h2>Our Moments</h2>
+        <p class="sub">Two families, one beautiful celebration</p>
+        <div class="family-buttons"><button class="family-btn selected" data-family="girl">LADKI WAALE <small>Agarwal Family</small></button><button class="family-btn" data-family="boy">LADKE WAALE <small>Goyal Family</small></button></div>
+        <h3 id="familyTitle">Agarwal Family <small>(Ladkiwale)</small></h3>
+        <div id="events" class="events"></div>
+      </section>
+      <section id="venue-location" class="venue-location">
+        <p class="micro">✧ VENUE & LOCATION ✧</p>
+        <h2>Find Our Celebration</h2>
+        <p>Venue details will be announced soon</p>
+        <p class="venue-note">Once the venue is confirmed, its address and Google Maps location will appear here.</p>
+        <div class="bottom-map" aria-label="Google Maps placeholder"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg><span>Google Maps will appear here</span></div>
+      </section>
+      <footer>
+        <div class="flourish">✦ ❀ ✦</div>
+        <h2>With Love</h2>
+        <p>Krishika & Vedank</p><small>JANUARY 2027</small>
+      </footer>
+    </main>
+    <div id="popup" class="popup" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Save the date">
+      <div class="popup-inner"><button id="close" class="close" aria-label="Close">×</button>
+        <p class="micro">SAVE THE DATE</p>
+        <h2>28 January 2027</h2>
+        <p>Krishika & Vedank</p>
+        <p>Let the celebrations begin!</p><button id="explore" class="family-btn">Explore the celebrations ↓</button>
+      </div>
+    </div>
+    <div id="confetti" class="confetti" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
