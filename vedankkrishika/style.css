@@ -21,7 +21,7 @@ body{background:var(--beige)}
 body:after{background:rgba(247,235,222,.77)}
 .invitation{background:rgba(249,238,225,.74)}
 .door-inside{background:#f6e9dd}
-.hero{background:linear-gradient(180deg,rgba(246,232,218,.95) 0%,rgba(247,233,218,.73) 58%,rgba(247,233,218,.30) 100%)}
+.hero{background:linear-gradient(180deg,rgba(246,232,218,.10) 0%,rgba(247,233,218,.10) 58%,rgba(247,233,218,.10) 100%)}
 .event{background:rgba(251,242,232,.68)}
 .venue-block{background:rgba(250,240,229,.88)}
 .event-meta{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin:10px auto 8px;font:12px 'DM Sans',sans-serif;color:#8e5967}
