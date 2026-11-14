@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=DM+Sans:wght@400;500;600&display=swap');
+
+
+@font-face {
+  font-family: 'PF Champion Script Pro';
+  src: url('./assets/fonts/PFChampionScriptPro-Reg-subset.otf')
+       format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PF Champion Script Pro';
+  src: url('./assets/fonts/PFChampionScriptPro-Bold-subset.otf')
+       format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root{--pink:#bc275f;--wine:#8e3152;--cream:#fffaf8;--ink:#6b4b52}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff9f6;color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif}button{cursor:pointer}body:before{content:'';position:fixed;inset:0;background:url('assets/palace.png') center center/cover no-repeat;z-index:-3}body:after{content:'';position:fixed;inset:0;background:rgba(255,252,249,.89);z-index:-2}.invitation{width:min(100%,480px);min-height:100vh;margin:auto;background:rgba(255,251,249,.86);box-shadow:0 0 45px #9b727019;position:relative}.music{position:fixed;top:15px;right:15px;z-index:60;border:0;border-radius:50px;padding:11px 15px;background:#be285f;color:white;font:600 13px 'DM Sans',sans-serif;box-shadow:0 4px 16px #aa22594a}.entrance{position:fixed;inset:0;z-index:100;display:flex;justify-content:center;align-items:center;background:#fff8f3;transition:opacity .7s,visibility .7s}.entrance.gone{opacity:0;visibility:hidden;pointer-events:none}.door-stage{height:min(100dvh,850px);aspect-ratio:192/322;max-width:100%;position:relative;overflow:hidden;background:#e7b991;perspective:1200px}.door-inside{position:absolute;inset:0;background:linear-gradient(#fff9f6,#fff9f6);opacity:1}.panel{position:absolute;top:0;bottom:0;width:50%;background-image:url('assets/door.png');background-repeat:no-repeat;background-size:200% 100%;backface-visibility:hidden;transition:transform 2.1s cubic-bezier(.4,0,.16,1);z-index:2}.panel.left{left:0;background-position:left center;transform-origin:left center}.panel.right{right:0;background-position:right center;transform-origin:right center}.entrance.opening .panel.left{transform:rotateY(-105deg)}.entrance.opening .panel.right{transform:rotateY(105deg)}.door-plaque{position:absolute;z-index:3;top:7%;left:17%;right:17%;border-radius:35px;padding:8px 5px;text-align:center;background:#fff5e7e8;color:#9e6c56;font:clamp(20px,3.8vh,30px) 'Great Vibes',cursive;transition:opacity .35s}.door-plaque small{display:block;font:9px 'DM Sans',sans-serif;letter-spacing:2px}.tap{position:absolute;z-index:4;top:51%;left:50%;transform:translate(-50%,-50%);border:0;border-radius:50px;background:#fff4e6ed;padding:12px 28px;color:#a56e5c;font:25px 'Great Vibes',cursive;white-space:nowrap;box-shadow:0 3px 20px #7b482d30;transition:opacity .3s}.entrance.opening .tap,.entrance.opening .door-plaque{opacity:0;pointer-events:none}.hero{text-align:center;min-height:100dvh;padding:90px 20px 45px;display:flex;align-items:center;flex-direction:column;justify-content:flex-start}.micro{font:500 10px 'DM Sans',sans-serif;letter-spacing:4px;color:#8d7776}.names{margin:30px auto 18px;display:flex;flex-direction:column;align-items:center;line-height:1.08;color:var(--wine);font:clamp(65px,16vw,91px) 'Great Vibes',cursive}.names i{font:30px 'Cormorant Garamond',serif;color:#b99c71;margin:0}.save{margin:16px 0 18px}.scratch-area{position:relative;width:min(100%,320px);height:142px;border-radius:12px;overflow:hidden;background:#fff5e9;box-shadow:0 8px 30px #d7b87432}.scratch-inner{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--wine);font:31px 'Great Vibes',cursive}.scratch-inner small{font:10px 'DM Sans',sans-serif;letter-spacing:2px;margin-top:8px}#scratch{position:absolute;inset:0;width:100%;height:100%;touch-action:none}.scratch-button{border:0;border-radius:50px;background:var(--pink);color:#fff;padding:11px 22px;margin:16px 0;font:600 12px 'DM Sans',sans-serif;letter-spacing:1px}.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;width:100%;max-width:345px;margin:13px auto 25px}.timer div{background:#fff0edbd;border:1px solid #f0d8d6;border-radius:9px;padding:10px 2px}.timer strong{display:block;color:#a4365a;font:29px 'Cormorant Garamond',serif}.timer small{display:block;font:9px 'DM Sans',sans-serif;letter-spacing:1px}.hero-flourish{color:#d5aa83;font-size:24px}.intro{max-width:300px;font-size:22px;line-height:1.4}.monogram{width:170px;max-width:60%;mix-blend-mode:multiply;margin:10px auto 20px}.selection{text-align:center;padding:70px 18px 65px}.selection h2,footer h2{font:65px 'Great Vibes',cursive;color:var(--wine);font-weight:400;margin:12px 0}.sub{font-size:22px;margin:0 auto 24px}.family-buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:25px 0 40px}.family-btn{background:#be285f;color:white;border:1px solid #be285f;border-radius:40px;padding:13px 20px;font:600 12px 'DM Sans',sans-serif;letter-spacing:1px;min-width:155px}.family-btn small{display:block;font-size:10px;letter-spacing:0;margin-top:6px;font-weight:400}.family-btn.selected{background:#912447;box-shadow:0 0 0 3px #f7cbd9}#familyTitle{font:48px 'Great Vibes',cursive;color:var(--wine);font-weight:400;margin:0 0 27px;scroll-margin-top:30px}#familyTitle small{display:block;font:16px 'Cormorant Garamond',serif}.events{display:grid;gap:35px}.event{background:#fffaf9cc;border-bottom:1px solid #e8cdd1;padding:8px 8px 26px}.event img{display:block;width:100%;max-width:345px;height:340px;object-fit:cover;object-position:center;margin:auto;border-radius:4px}.event h4{font:43px 'Great Vibes',cursive;color:var(--wine);font-weight:400;margin:15px 0 3px}.event .event-date{font:15px 'DM Sans',sans-serif;color:#8e5967}.event .venue{font-size:18px;color:#998082}footer{text-align:center;padding:55px 20px 90px}footer p{font:31px 'Great Vibes',cursive;color:var(--wine)}footer small{letter-spacing:3px}.flourish{color:#bb9b80}.popup{position:fixed;inset:0;background:#50323d9c;z-index:80;display:none;align-items:center;justify-content:center;padding:20px}.popup.show{display:flex}.popup-inner{position:relative;background:#fffaf7;border:1px solid #ebc6cf;box-shadow:0 20px 60px #34172252;text-align:center;padding:50px 22px;width:min(380px,100%)}.popup-inner h2{font:54px 'Great Vibes',cursive;color:var(--wine);font-weight:400}.popup-inner p{font-size:23px}.popup-inner .micro{font-size:10px}.close{position:absolute;top:5px;right:12px;font-size:30px;border:0;background:transparent;color:var(--wine)}.confetti{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden}.confetti i{position:absolute;top:-30px;width:8px;height:13px;animation:fall 3s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}@media(min-width:600px){.hero{padding-top:95px}.names{font-size:91px}}@media(prefers-reduced-motion:reduce){.panel{transition-duration:.2s}.confetti i{animation-duration:.5s}}
 
 /* VENUE & GOOGLE MAPS — editable placeholders for each function */
@@ -155,3 +175,20 @@ body:after{background:rgba(247,235,222,.77)}
 .gallery-viewer .gallery-arrow{z-index:20}
 .developer-credit{font:500 12px/1.7 'DM Sans',Arial,sans-serif;letter-spacing:.3px;text-align:center;margin:25px 0 0;color:#926d68}
 .developer-credit a{color:inherit;text-decoration:none}
+
+/* PF Champion Script Pro */
+.door-plaque,
+.tap,
+.names,
+.scratch-inner,
+.selection h2,
+footer h2,
+#familyTitle,
+.event h4,
+.popup-inner h2,
+.venue-location h2 {
+  font-family: 'PF Champion Script Pro',
+               'Great Vibes', cursive;
+  font-weight: 400;
+}
+
