@@ -176,12 +176,13 @@ body:after{background:rgba(247,235,222,.77)}
 .developer-credit{font:500 12px/1.7 'DM Sans',Arial,sans-serif;letter-spacing:.3px;text-align:center;margin:25px 0 0;color:#926d68}
 .developer-credit a{color:inherit;text-decoration:none}
 
-/* PF Champion Script Pro */
+
+/* PF Champion Script Pro - Wedding Headings */
+
 .door-plaque,
 .tap,
 .names,
 .scratch-inner,
-.selection h2,
 footer h2,
 #familyTitle,
 .event h4,
@@ -190,5 +191,20 @@ footer h2,
   font-family: 'PF Champion Script Pro',
                'Great Vibes', cursive;
   font-weight: 400;
+}
+
+/* Our Moments - Normal Font */
+.selection h2 {
+  font-family: 'Cormorant Garamond',
+               Georgia, serif !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
+
+/* Photo Gallery - Normal Font */
+.photo-gallery h2 {
+  font-family: 'Cormorant Garamond',
+               Georgia, serif;
+  font-weight: 600;
 }
 
