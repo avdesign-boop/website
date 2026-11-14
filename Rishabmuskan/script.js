@@ -12,8 +12,7 @@ const maps={
 };
 const itinerary=[
  {title:'Biyahaat',date:'2026-11-26',time:'11:01 AM onwards',venue:'Residence',address:'Villa 107, Sunrise Valley Villas',map:'residence',image:'Biyahaat.png'},
- {title:'Bhajan',date:'2026-11-28',time:'8:01 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Bhajan.jpeg
-'},
+ {title:'Bhajan',date:'2026-11-28',time:'8:01 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Bhajan.jpg'},
  {title:'Mehandi',date:'2026-11-29',time:'11:01 AM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'sangeet.png'},
  {title:'Dholak Ke Geet',date:'2026-11-29',time:'7:01 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Dholak-Ke-Geet.png'},
  {title:'Bhaat',date:'2026-11-30',time:'6:01 PM onwards',venue:'SS Convention',address:'Shamshabad, Hyderabad',map:'ss',image:'Bhaat.png'},
