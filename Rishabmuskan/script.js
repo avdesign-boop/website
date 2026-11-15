@@ -12,7 +12,7 @@ const maps={
 };
 const itinerary=[
  {title:'Biyahaat',date:'2026-11-26',time:'11:01 AM onwards',venue:'Residence',address:'Villa 107, Sunrise Valley Villas',map:'residence',image:'Biyahaat.png'},
- {title:'Bhajan',date:'2026-11-28',time:'8:01 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Bhajan.jpg'},
+ {title:'Bhajan',subtitle: 'SHREE MAHASAR MATA BHAJAN',date:'2026-11-28',time:'8:01 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Bhajan.jpg'},
  {title:'Mehandi',date:'2026-11-29',time:'11:01 AM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'sangeet.png'},
  {title:'Dholak Ke Geet',date:'2026-11-29',time:'7:01 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Dholak-Ke-Geet.png'},
  {title:'Bhaat',date:'2026-11-30',time:'6:01 PM onwards',venue:'SS Convention',address:'Shamshabad, Hyderabad',map:'ss',image:'Bhaat.png'},
@@ -27,7 +27,8 @@ function safeText(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&
 const calendar='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg>';
 const pin='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>';
 function formatDate(iso){return new Date(iso+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',weekday:'long'}).replace(/^(\w+), (.*)$/,'$2 · $1')}
-$('events').innerHTML=itinerary.map(e=>`<article class="event"><img src="assets/${encodeURIComponent(e.image)}" alt="${safeText(e.title)} illustration" loading="lazy"><h4>${safeText(e.title)}</h4><p class="event-time">${safeText(e.time)}</p><div class="event-meta"><span class="meta-date">${calendar}${safeText(formatDate(e.date))}</span><a class="map-icon" href="${maps[e.map]}" target="_blank" rel="noopener noreferrer" aria-label="Open ${safeText(e.venue)} in Google Maps">${pin} Map</a></div><p class="event-venue">${safeText(e.venue)}<small>${safeText(e.address)}</small></p></article>`).join('');
+$('events').innerHTML=itinerary.map(e=>`<article class="event"><img src="assets/${encodeURIComponent(e.image)}" alt="${safeText(e.title)} illustration" loading="lazy"><h4>${safeText(e.title)}</h4> ${e.subtitle ? `<div class="event-subtitle">${safeText(e.subtitle)}</div>` : ''}
+<p class="event-time">${safeText(e.time)}</p><div class="event-meta"><span class="meta-date">${calendar}${safeText(formatDate(e.date))}</span><a class="map-icon" href="${maps[e.map]}" target="_blank" rel="noopener noreferrer" aria-label="Open ${safeText(e.venue)} in Google Maps">${pin} Map</a></div><p class="event-venue">${safeText(e.venue)}<small>${safeText(e.address)}</small></p></article>`).join('');
 
 // Physical page turn: next photo stays underneath the turning sheet.
 (()=>{
