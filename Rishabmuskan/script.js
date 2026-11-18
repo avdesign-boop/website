@@ -6,22 +6,22 @@ function burst(){const root=$('confetti');for(let i=0;i<140;i++){const x=documen
 // Google Maps short links supplied by the family. Open links in a new tab.
 const maps={
  residence:'https://maps.app.goo.gl/ohtWrsPg4vf21Dx69?g_st=ac',
- kalpataru:'https://maps.app.goo.gl/JPwVoQYdVoGn8cnr9',
+ kalptaru:'https://maps.app.goo.gl/JPwVoQYdVoGn8cnr9',
  ss:'https://maps.app.goo.gl/ADAPAavKdo5unWiM7',
  vyasta:'https://maps.app.goo.gl/NRryXtDTAHdGd9dR7'
 };
 const itinerary=[
  {title:'Biyahaat',date:'2026-11-26',time:'11:01 AM onwards',venue:'Residence',address:'Villa 107, Sunrise Valley Villas',map:'residence',image:'Biyahaat.png'},
- {title:'Bhajan',subtitle: 'SHREE MAHASAR MATA BHAJAN',date:'2026-11-28',time:'8:01 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Bhajan.jpg'},
- {title:'Mehandi',date:'2026-11-29',time:'11:01 AM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'sangeet.png'},
- {title:'Dholak Ke Geet',date:'2026-11-29',time:'7:01 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Dholak-Ke-Geet.png'},
+ {title:'Bhajan',subtitle: 'SHREE MAHASAR MATA BHAJAN',date:'2026-11-28',time:'8:01 PM onwards',venue:'Kalptaru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalptaru',image:'Bhajan.jpg'},
+ {title:'Mehandi',date:'2026-11-29',time:'11:01 AM onwards',venue:'Kalptaru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalptaru',image:'sangeet.png'},
+ {title:'Dholak Ke Geet',date:'2026-11-29',time:'7:01 PM onwards',venue:'Kalptaru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalptaru',image:'Dholak-Ke-Geet.png'},
  {title:'Bhaat',date:'2026-11-30',time:'6:01 PM onwards',venue:'SS Convention',address:'Shamshabad, Hyderabad',map:'ss',image:'Bhaat.png'},
  {title:'Sagai',date:'2026-11-30',time:'7:31 PM onwards',venue:'SS Convention',address:'Shamshabad, Hyderabad',map:'ss',image:'sagai.png'},
- {title:'Haldi Carnival',date:'2026-12-01',time:'10:31 AM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'haldi.png'},
- {title:'Musical Program',date:'2026-12-01',time:'8:31 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Indian-Musical.png'},
- {title:'Nikasi',date:'2026-12-02',time:'4:31 PM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'Ornate-Indian-Nikasi.png'},
+ {title:'Haldi Carnival',date:'2026-12-01',time:'10:31 AM onwards',venue:'Kalptaru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalptaru',image:'haldi.png'},
+ {title:'Musical Program',date:'2026-12-01',time:'8:31 PM onwards',venue:'Kalptaru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalptaru',image:'Indian-Musical.png'},
+ {title:'Nikasi',date:'2026-12-02',time:'4:31 PM onwards',venue:'Kalptaru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalptaru',image:'Ornate-Indian-Nikasi.png'},
  {title:'Wedding & Reception',date:'2026-12-02',time:'9:01 PM onwards',venue:'Vyasta Conventions',address:'Hyderabad',map:'vyasta',image:'Shaadi&Reception.png'},
- {title:'Check Out',date:'2026-12-03',time:'8:31 AM onwards',venue:'Kalpataru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalpataru',image:'palace.png'}
+ {title:'Check Out',date:'2026-12-03',time:'8:31 AM onwards',venue:'Kalptaru Convention',address:'Gaganpahad, Shamshabad, Hyderabad',map:'kalptaru',image:'palace.png'}
 ];
 function safeText(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 const calendar='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg>';
