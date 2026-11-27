@@ -42,3 +42,6 @@ body:after{background:rgba(247,235,222,.77)}
 .venue-location>p:not(.micro){font-size:20px;color:#8e5967}
 .venue-location .venue-note{font-size:15px!important;max-width:330px;margin:12px auto 25px;line-height:1.5}
 .bottom-map{min-height:220px;border:1px solid #e9d3cf;border-radius:12px;background:rgba(255,250,245,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#a77b85;font:13px 'DM Sans',sans-serif}
+
+/* Developer credit */
+footer .developer-credit{font:400 13px/1.5 "DM Sans",Arial,sans-serif;color:#a17b72;letter-spacing:0;text-align:center;margin:32px auto 0;padding:0 8px;}
